@@ -20,9 +20,9 @@ public class queue {
               out.println ("Please enter the size of your sub array");
         int subArraySize = queuein.nextInt();               // Declare subarraysize as integer and assign it to te scanner for input
               out.println ("Please enter your " +Number + " numbers");
+        
+         // Declare queueint as integer and assign it to te scanner for input
         for (int i = 0; i < Number; i++) {
-
-            // Declare queueint as integer and assign it to te scanner for input
             int queueint = queuein.nextInt ( );
             queue.add(queueint);                              // add the input to both the ArrayDequeue and HashSet
             set.add(queueint);
@@ -34,8 +34,8 @@ public class queue {
             if (set.size ( ) > HUI) {
                 HUI = set.size();
             }
-            int first = queue.remove();    /* DeQueue return then remove the element at the front the container
-                                           and if the front of the queue is empty, HashSet Return and Remove the element at the front the container*/
+            int first = queue.remove();    /* DeQueue return then remove the element at the front of the container
+                                           and if the front of the container is empty, HashSet Return and Remove the element at the front the container*/
         if (!queue.contains(first)) set.remove(first);
         }
      }
